@@ -222,16 +222,16 @@ header #fh5co-main-nav > ul li a {
 }
 header #fh5co-main-nav > ul li a.active:before {
   position: absolute;
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
   content: '';
-  top: 10px;
-  right: -8px;
+  top: 12px;
+  right: -6px;
   background: #4064c5;
-  -webkit-border-radius: 2px;
+  /*-webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
-  border-radius: 2px;
+  border-radius: 2px;*/
 }
 header #fh5co-main-nav > ul li a:hover, header #fh5co-main-nav > ul li a:focus {
   text-decoration: none;
