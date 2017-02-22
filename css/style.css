@@ -225,8 +225,8 @@ header #fh5co-main-nav > ul li a.active:before {
   width: 7px;
   height: 7px;
   content: '';
-  top: -5px;
-  right: -5px;
+  top: 10px;
+  right: -8px;
   background: #4064c5;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
