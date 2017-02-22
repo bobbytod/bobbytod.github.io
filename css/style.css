@@ -113,8 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ::selection {
   color: #fcfcfc;
-  background: #a9a9a9;
-  /*background: #f56f8d;*/
+  background: #f56f8d;
 }
 
 .btn {
@@ -268,7 +267,7 @@ header #fh5co-main-nav > ul li:first-child {
 .owl-carousel-posts .owl-controls .owl-nav .owl-next,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev {
   top: 50%;
-  margin-top: -19px;
+  margin-top: -29px;
   z-index: 9999;
   position: absolute;
   -webkit-transition: 0.2s;
