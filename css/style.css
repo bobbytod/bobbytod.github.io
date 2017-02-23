@@ -172,6 +172,8 @@ header, #fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-sect
 
 header {
   padding-top: 0em;
+  padding-bottom: 0em;
+  z-index: 999;
 }
 header .fh5co-navbar-brand {
 	padding-top: 0em;
@@ -256,6 +258,7 @@ header #fh5co-main-nav > ul li:first-child {
 }
 
 .owl-carousel {
+  padding-top: 0em;
   margin-bottom: 3em;
 }
 
