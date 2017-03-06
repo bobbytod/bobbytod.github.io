@@ -174,7 +174,7 @@ h7{
 header, #fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-section,
 #fh5co-common-section, #fh5co-blog-section, #footer, #fh5co-contact-section,
 #fh5co-work-section {
-  padding-bottom: 5em;
+  padding-bottom: 0em;
 }
 
 header {
