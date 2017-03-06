@@ -182,16 +182,25 @@ header {
   padding-bottom: 0em;
   z-index: 999;
 }
+
 header .fh5co-navbar-brand {
 	padding-top: 0em;
 	padding-bottom: 0em;
 }
+
+header .fh5co-navbar-logo {
+	padding-top: 0em;
+	padding-bottom: 0em;
+	position: absolute;
+	left:0px;
+}
+
 header .fh5co-navbar-brand .fh5co-logo {
   position: relative;
   font-family: Arial;
   font-size: 50px;
   color: #000;
-  text-transform: lowercase;
+  /*text-transform: lowercase;*/
   font-weight: 700;
   letter-spacing: 5px;
 }
