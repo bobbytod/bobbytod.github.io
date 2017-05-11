@@ -123,17 +123,54 @@
     <script>
         paypal.Button.render({
 
-            env: 'production', // Or 'sandbox',
+            env: 'sandbox', // Or 'production',
+			
+			locale: 'en_AU',
+			
+			style: {
+				size:  'responsive',
+				color: 'silver',
+				shape: 'rect',
+				label: 'checkout'
+			},
 
-            commit: true, // Show a 'Pay Now' button
+            client: {
+				sandbox:    'AVfdll0eLBazD1y1t5hMhkz0hSFTVlvi1RQFHiJfFbCdmWHmTiHFLMZNckjtdskypJRyFqU8UDaxyKxS',
+				production: 'xxxxxxxxxx'
+			},
 
-            payment: function() {
-                // Set up the payment here
-            },
+			payment: function(data, actions) {
+				return actions.payment.create({
+					transactions: [
+						{
+							amount: { total: '50.00', currency: 'AUD' }
+						}
+					]
+				});
+			},
+		
+			commit: true, // Show a 'Pay Now' button
+	
+			onAuthorize: function(data, actions) {
 
-            onAuthorize: function(data, actions) {
-                // Execute the payment here
-           }
+				// Get the payment details
+
+				return actions.payment.get().then(function(paymentDetails) {
+
+					// Show a confirmation using the details from paymentDetails
+					// Then listen for a click on your confirm button
+
+					document.querySelector('#confirm-button')
+						.addEventListener('click', function() {
+
+						// Execute the payment
+
+						return actions.payment.execute().then(function() {
+							// Show a success page to the buyer
+						});
+					});
+				});
+			}
 
         }, '#paypal-button');
     </script>
