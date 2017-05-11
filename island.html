@@ -59,24 +59,22 @@
 					<div class="dropdown">
 						<button class="dropbtn">collection</button>
 						<div class="dropdown-content">
-							<a href="island.html" class="active">kitchen</a>
-							<a href="bedroom.html">bedroom</a>
-							<a href="#">study</a>
-							<a href="#">living</a>
-							<a href="#">bathroom</a>
+							<a href="island.html">island trolley</a>
+							<a href="#">product 2</a>
+							<a href="#">product 3</a>
 						</div>
-					</div>       
-					<li><a href="#">projects & news</a></li>					
+					</div>   
+					<!--<li><a href="#">projects & news</a></li>	-->				
 					<!--<li><a href="services.html">where to buy</a></li>-->
 					<!-- <li><a href="about.html">about</a></li> -->
 					<!--<li><a href="contact.html">contact</a></li>-->
 					<div class="dropdown">
-						<button class="dropbtn">contacts</button>
+						<button class="dropbtn">info</button>
 						<div class="dropdown-content">
-							<a href="#">francish. contact details</a>
-							<a href="#">collaborators</a>
+							<a href="#">info</a>
+							<a href="#">enquiries@francish.com</a>
 						</div>
-					</div>  
+					</div>    
 				</ul>
 			</nav>
 		</div>
@@ -112,6 +110,34 @@
 							<span><br>Available in Walnut(as shown), White lacquer and Wenge</span>
 							<span><br>IN STOCK</span>
 						</div>
+						
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+</head>
+
+<body>
+    <div id="paypal-button"></div>
+
+    <script>
+        paypal.Button.render({
+
+            env: 'production', // Or 'sandbox',
+
+            commit: true, // Show a 'Pay Now' button
+
+            payment: function() {
+                // Set up the payment here
+            },
+
+            onAuthorize: function(data, actions) {
+                // Execute the payment here
+           }
+
+        }, '#paypal-button');
+    </script>
+</body>
 					</div>
 				</div>
 				<!--<div class="col-md-4 col-sm-6">
